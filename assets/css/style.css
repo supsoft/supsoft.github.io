@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(163, 200, 255);
+    transition: .3s;
+}
+
+a:hover {
+    color: rgb(122, 200, 255);
+}
+
+.navbar {
+    padding: 20px;
+    position: fixed;
+    width: 200px;
+    height: 100vh;
+    background-color: #333;
+    color: #fff;
+}
+
+.navbar ul {
+    list-style: none;
+    padding-left: 0;
+
+}
+
+.navbar ul li {
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
+
+.page {
+    padding: 20px;
+    margin-left: 240px;
+    height: 100vh;
+}
+
+#home {
+    background-color: #f1f1f1;
+}
+
+#projects {
+    background-color: #999;
+}
+
+#about {
+    background-color: #ddd;
+}
+
+#contact {
+    background-color: #bbb;
+}
+
+
+
