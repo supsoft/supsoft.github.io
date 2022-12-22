@@ -1,2 +1,2 @@
 # supsoft.github.io
-supsoft website
+This is the SupSoft GitHub Page.
