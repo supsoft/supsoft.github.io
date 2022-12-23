@@ -33,14 +33,14 @@ body {
     position: relative;
 }
 
-a {
+li a {
     text-decoration: none;
-    color: rgb(163, 200, 255);
+    color: rgb(255, 50, 190);
     transition: .3s;
 }
 
-a:hover {
-    color: rgb(122, 200, 255);
+li:hover a {
+    color: rgb(214, 50, 255);
 }
 
 .navbar {
@@ -91,7 +91,7 @@ a:hover {
 
 .navbar ul .navlink:hover div {
     max-width: 100%;
-    background-image: linear-gradient(to right, rgb(255, 0, 174), rgb(204, 0, 255));
+    background-image: linear-gradient(to left, rgb(255, 0, 174), rgb(204, 0, 255));
     border-radius: 10px;
 }
 
