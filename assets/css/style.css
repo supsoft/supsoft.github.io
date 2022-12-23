@@ -180,8 +180,8 @@ li:hover a {
 
 .menu-swapper-wide {
     position: fixed;
-    bottom: 20px;
-    left: 180px;
+    bottom: 30px;
+    left: 171px;
     z-index: 100;
 }
 
@@ -202,6 +202,7 @@ li:hover a {
 
 .menu-swapper-wide button:hover svg {
     fill: rgb(214, 50, 255);
+    transform: scale(1.1) rotate(180deg);
 }
 
 
@@ -229,6 +230,7 @@ li:hover a {
 
 .menu-swapper-small button:hover svg {
     fill: rgb(214, 50, 255);
+    transform: scale(1.1) rotate(0deg);
 }
 
 
