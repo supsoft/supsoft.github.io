@@ -29,7 +29,7 @@ html::-webkit-scrollbar-thumb:active {
 body {
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     position: relative;
 }
 
@@ -55,13 +55,44 @@ a:hover {
 .navbar ul {
     list-style: none;
     padding-left: 0;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    left: 0;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
 
 }
 
-.navbar ul li {
-    padding: 10px;
-    margin: 10px;
-    text-align: center;
+.navbar ul .navlink {
+    padding: 15px;
+    padding-top: 10px;
+    padding-bottom: 0px;
+    margin: 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-align: right;
+    font-size: 20pt;
+}
+
+.navbar ul .navlink div {
+    margin-top: 15px;
+    margin-bottom: 5px;
+    height: 3px;
+    width: 100%;
+    max-width: 0;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
+    -webkit-transition: max-width .2s ease;
+    -moz-transition: max-width .2s ease;
+    -ms-transition: max-width .2s ease;
+    -o-transition: max-width .2s ease;
+    transition: max-width .2s ease;
+}
+
+.navbar ul .navlink:hover div {
+    max-width: 100%;
+    background-image: linear-gradient(to right, rgb(255, 0, 174), rgb(204, 0, 255));
+    border-radius: 10px;
 }
 
 .page {
@@ -71,6 +102,7 @@ a:hover {
 
 .page-content {
     padding: 20px;
+    padding-left: 40px;
 }
 
 #home {
