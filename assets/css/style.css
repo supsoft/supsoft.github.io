@@ -1,3 +1,31 @@
+html {
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+    width: 10px;
+}
+
+html::-webkit-scrollbar-track {
+    background-image: url("/assets/images/transparent.png");
+}
+
+html::-webkit-scrollbar-thumb {
+    background: rgb(136, 136, 136);
+    border-radius: 10px;
+    box-shadow: 0px 0px 4px #333;
+}
+
+html::-webkit-scrollbar-thumb:hover {
+    background: rgb(100, 100, 100);
+}
+
+html::-webkit-scrollbar-thumb:active {
+    background: rgb(68, 68, 68);
+}
+
+
+
 body {
     margin: 0;
     padding: 0;
@@ -37,9 +65,12 @@ a:hover {
 }
 
 .page {
-    padding: 20px;
     margin-left: 240px;
     height: 100vh;
+}
+
+.page-content {
+    padding: 20px;
 }
 
 #home {
