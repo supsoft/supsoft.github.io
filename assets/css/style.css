@@ -43,7 +43,10 @@ li:hover a {
     color: rgb(214, 50, 255);
 }
 
-.navbar {
+
+/* wide navbar */
+
+.navbar-wide {
     padding: 20px;
     position: fixed;
     width: 200px;
@@ -52,7 +55,7 @@ li:hover a {
     color: #fff;
 }
 
-.navbar ul {
+.navbar-wide ul {
     list-style: none;
     padding-left: 0;
     position: absolute;
@@ -64,7 +67,7 @@ li:hover a {
 
 }
 
-.navbar ul .navlink {
+.navbar-wide ul .navlink {
     padding: 15px;
     padding-top: 10px;
     padding-bottom: 0px;
@@ -75,7 +78,7 @@ li:hover a {
     font-size: 20pt;
 }
 
-.navbar ul .navlink div {
+.navbar-wide ul .navlink div {
     margin-top: 15px;
     margin-bottom: 5px;
     height: 3px;
@@ -89,26 +92,163 @@ li:hover a {
     transition: max-width .2s ease;
 }
 
-.navbar ul .navlink:hover div {
+.navbar-wide ul .navlink:hover div {
     max-width: 100%;
     background-image: linear-gradient(to left, rgb(255, 0, 174), rgb(204, 0, 255));
     border-radius: 10px;
 }
 
-.navbar ul li.active div {
+.navbar-wide ul li.active div {
     max-width: 100%;
     background-image: linear-gradient(to left, rgb(255, 0, 174), rgb(204, 0, 255));
     border-radius: 10px;
 }
+
+/* small navbar */
+
+.navbar-small {
+    padding: 20px;
+    position: fixed;
+    width: 56px;
+    height: 100vh;
+    background-color: #333;
+    color: #fff;
+}
+
+.navbar-small ul {
+    list-style: none;
+    padding-left: 0;
+    position: absolute;
+    top: 48%;
+    right: 0;
+    left: 0;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+
+}
+
+.navbar-small ul .navlink {
+    padding: 15px;
+    padding-top: 10px;
+    padding-bottom: 0px;
+    margin: 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-align: right;
+    font-size: 20pt;
+}
+
+.navbar-small ul .navlink div {
+    margin-top: 15px;
+    margin-bottom: 5px;
+    height: 3px;
+    width: 100%;
+    max-width: 0;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
+    -webkit-transition: max-width .2s ease;
+    -moz-transition: max-width .2s ease;
+    -ms-transition: max-width .2s ease;
+    -o-transition: max-width .2s ease;
+    transition: max-width .2s ease;
+}
+
+.navbar-small ul .navlink:hover div {
+    max-width: 100%;
+    background-image: linear-gradient(to left, rgb(255, 0, 174), rgb(204, 0, 255));
+    border-radius: 10px;
+}
+
+.navbar-small ul li.active div {
+    max-width: 100%;
+    background-image: linear-gradient(to left, rgb(255, 0, 174), rgb(204, 0, 255));
+    border-radius: 10px;
+}
+
+#homelink a .svg-icon {
+    transform: scale(1.4)
+}
+
+#projectslink a .svg-icon {
+    transform: scale(0.95)
+}
+
+/* navbar swapper */
+
+.dont-display-navbar {
+    display: none;
+}
+
+.menu-swapper-wide {
+    position: fixed;
+    bottom: 20px;
+    left: 180px;
+    z-index: 100;
+}
+
+.menu-swapper-wide button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.menu-swapper-wide button svg {
+    width: 30px;
+    height: 30px;
+    fill: rgb(255, 50, 190);
+    transition: .2s ease;
+    transform: rotate(180deg)
+}
+
+.menu-swapper-wide button:hover svg {
+    fill: rgb(214, 50, 255);
+}
+
+
+.menu-swapper-small {
+    position: fixed;
+    bottom: 20px;
+    left: 32px;
+    z-index: 100;
+}
+
+.menu-swapper-small button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.menu-swapper-small button svg {
+    width: 30px;
+    height: 30px;
+    fill: rgb(255, 50, 190);
+    transition: .2s ease;
+    transform: rotate(0deg)
+}
+
+.menu-swapper-small button:hover svg {
+    fill: rgb(214, 50, 255);
+}
+
+
+.nav-is-wide {
+    padding-left: 240px;
+}
+
+.nav-is-small {
+    padding-left: 90px;
+}
+
 
 .page {
-    margin-left: 240px;
     height: 100vh;
 }
 
 .page-content {
     padding: 20px;
     padding-left: 40px;
+    padding-right: 40px;
 }
 
 #home {
